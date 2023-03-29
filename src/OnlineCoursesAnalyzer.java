@@ -41,7 +41,7 @@ public class OnlineCoursesAnalyzer {
             }
         }
     }
-    //1
+
     public Map<String, Integer> getPtcpCountByInst() {
         Map<String, Integer> countByInst = new TreeMap<>();
         for (Course course : courses) {
@@ -256,32 +256,32 @@ public class OnlineCoursesAnalyzer {
 }
 
 
-    class Course {
-        String institution;
-        String number;
-        Date launchDate;
-        String title;
-        String instructors;
-        String subject;
-        int year;
-        int honorCode;
-        int participants;
-        int audited;
-        int certified;
-        double percentAudited;
-        double percentCertified;
-        double percentCertified50;
-        double percentVideo;
-        double percentForum;
-        double gradeHigherZero;
-        double totalHours;
-        double medianHoursCertification;
-        double medianAge;
-        double percentMale;
-        double percentFemale;
-        double percentDegree;
+class Course {
+  String institution;
+  String number;
+  Date launchDate;
+  String title;
+  String instructors;
+  String subject;
+  int year;
+  int honorCode;
+  int participants;
+  int audited;
+  int certified;
+  double percentAudited;
+  double percentCertified;
+  double percentCertified50;
+  double percentVideo;
+  double percentForum;
+  double gradeHigherZero;
+  double totalHours;
+  double medianHoursCertification;
+  double medianAge;
+  double percentMale;
+  double percentFemale;
+  double percentDegree;
 
-        public Course(String institution, String number, Date launchDate,
+  public Course(String institution, String number, Date launchDate,
             String title, String instructors, String subject,
             int year, int honorCode, int participants,
             int audited, int certified, double percentAudited,
